@@ -307,7 +307,7 @@
         if (locBtn) {
             locBtn.addEventListener('click', function (e) {
                 e.preventDefault();
-                openLocationModal('index.html');
+                openLocationModal(/\/pages\//.test(window.location.pathname) ? 'index.html' : 'pages/index.html');
             });
         }
 

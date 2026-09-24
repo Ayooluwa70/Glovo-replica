@@ -14,7 +14,8 @@
     function goSearch() {
         var input = document.getElementById('search-input');
         var query = input ? input.value.trim() : '';
-        var url = 'pages/search.html';
+        var onPages = /\/pages\//.test(global.location.pathname);
+        var url = (onPages ? '' : 'pages/') + 'search.html';
         if (query) {
             url += '?q=' + encodeURIComponent(query);
         }
