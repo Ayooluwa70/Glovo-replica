@@ -160,7 +160,7 @@
             profile.logout();
             close();
             var onPages = /\/pages\//.test(window.location.pathname);
-            global.location.href = (onPages ? '../' : '') + 'login.html';
+            global.location.href = (onPages ? '../' : '') + 'index.html';
         });
     }
 
@@ -307,7 +307,7 @@
         if (locBtn) {
             locBtn.addEventListener('click', function (e) {
                 e.preventDefault();
-                openLocationModal(/\/pages\//.test(window.location.pathname) ? 'index.html' : 'pages/index.html');
+                openLocationModal(/\/pages\//.test(window.location.pathname) ? 'index2.html' : 'pages/index2.html');
             });
         }
 

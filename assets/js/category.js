@@ -1,4 +1,4 @@
-/* Category tiles on the home pages (index.html / login.html): clicking a tile
+/* Category tiles on the home pages (index2.html / index.html): clicking a tile
    expands a panel listing the related items across the stores in that
    category, styled after the search results page. Each item links through to
    its store page. */

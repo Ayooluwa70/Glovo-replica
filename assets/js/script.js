@@ -169,7 +169,7 @@
         runSearch(input ? input.value : '', categoryName);
     };
 
-    // Used by the inline onclick on index.html
+    // Used by the inline onclick on index2.html
     global.goSearch = goSearch;
 
     // Re-run the current search (used by Budget Mode after its settings change)
