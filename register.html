@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register with Glovo.">
+  <link rel="stylesheet" href="assets/css/login2.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <title>Register on Glovo</title>
+  <style>
+    .field {
+      margin-bottom: 16px;
+    }
+    .field label {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .reg-success {
+      display: none;
+      margin-top: 24px;
+      padding: 18px;
+      border: 1px solid #bfe6d8;
+      border-radius: 12px;
+      background: #e8f7f1;
+      color: #005f4e;
+      text-align: center;
+    }
+
+    #reg-type {
+      width: 100%;
+      height: 60px;
+      padding: 0 44px 0 14px;
+      border: 1px solid #d0d0d0;
+      border-radius: 10px;
+      background-color: #ffffff;
+      font-size: 18px;
+      color: #171717;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23008c74' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      background-size: 18px;
+    }
+
+    #reg-type:hover {
+      border-color: #008c74;
+    }
+
+    #reg-type:focus {
+      outline: none;
+      border-color: #008c74;
+      box-shadow: 0 0 0 3px rgba(0, 140, 116, 0.18);
+    }
+
+    #reg-type option {
+      color: #171717;
+      background-color: #ffffff;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header><a href="index.html" class="brand"><img src="assets/img/Logo.svg" alt="GrubGo"></a></header>
+  <main class="login-page">
+    <a href="index.html" class="close" aria-label="Close registration">&times;</a>
+    <section class="login-card">
+      <h1>Register here</h1>
+      <p class="intro" id="reg-intro">Tell us a little about yourself</p>
+      <form id="reg-form">
+        <div class="field">
+          <label for="reg-name">Full name</label>
+          <input id="reg-name" type="text" placeholder="Your full name" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="reg-email">Email</label>
+          <input id="reg-email" type="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="reg-type">I want to</label>
+          <select id="reg-type">
+            <option value="rider">Become a rider</option>
+            <option value="business">Register your business</option>
+            <option value="careers">Careers</option>
+          </select>
+        </div>
+
+        <p class="recaptcha">This site is protected by reCAPTCHA and the Google<br><a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms of Service</a> apply.</p>
+
+        <button class="whatsapp" type="submit">Create account</button>
+      </form>
+
+      <p class="reg-success" id="reg-success"></p>
+    </section>
+  </main>
+
+  <footer>
+          <!-- Single container div holding all footer content -->
+  <div class="my-footer-content clearfix">
+
+      <!-- Column 1: Let's do it together -->
+      <div class="col">
+          <h4>Let's do it together</h4>
+          <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Register your business</a></li>
+              <li><a href="#">Couriers</a></li>
+              <li><a href="#">Glovo Business</a></li>
+          </ul>
+      </div>
+
+      <!-- Column 2: Links of interest -->
+      <div class="col">
+          <h4>Links of interest</h4>
+          <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Glovo Prime</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Profile</a></li>
+          </ul>
+      </div>
+
+      <!-- Column 3: Follow us -->
+      <div class="col">
+          <h4>Follow us</h4>
+          <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+          </ul>
+      </div>
+
+      <!-- Right Side: Apps and Legal Links -->
+      <div class="right-col">
+          <div style="margin-bottom: 20px;">
+              <a href="https://apps.apple.com/us/app/glovo-food-delivery-takeaway/id951812684" class="app-badge">Download on the App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.glovo&pli=1" class="app-badge">GET IT ON Google Play</a>
+          </div>
+          <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies Policy</a></li>
+              <li><a href="#">Compliance</a></li>
+              <li><a href="#">Configure the cookies</a></li>
+              <li><a href="#">Digital Services Act</a></li>
+              <li><a href="#">European Accessibility Act</a></li>
+          </ul>
+      </div>
+
+      <!-- Bottom Section: Top categories: Nigeria -->
+      <div class="bottom-categories">
+          <h4>Top categories: Nigeria</h4>
+          <div class="category-links">
+              <a href="#">Breakfast</a>
+              <a href="#">Burgers</a>
+              <a href="#">Healthy</a>
+              <a href="#">Indian</a>
+              <a href="#">Nigerian</a>
+              <a href="#">Pastries</a>
+              <a href="#">Pizza</a>
+              <a href="#">Sushi</a>
+          </div>
+          <div style="margin-top: 10px;">
+              <a href="#">All categories</a>
+          </div>
+      </div>
+
+  </div>
+  </footer>
+
+  <script>
+    (function () {
+      var TITLES = {
+        rider: { intro: 'Enjoy flexibility, freedom and competitive earnings by delivering through Glovo.' },
+        business: { intro: 'Grow with Glovo! Our technology and user base can help you boost sales and unlock new opportunities!' },
+        careers: { intro: "Ready for an exciting new challenge? If you're ambitious, humble, and love working with others, then we want to hear from you!" }
+      };
+
+      var params = new URLSearchParams(window.location.search);
+      var type = params.get('type') || 'rider';
+      var intro = document.getElementById('reg-intro');
+      var select = document.getElementById('reg-type');
+
+      if (TITLES[type]) intro.textContent = TITLES[type].intro;
+      if (select) {
+        var option = select.querySelector('option[value="' + type + '"]');
+        if (option) select.value = type;
+      }
+
+      document.getElementById('reg-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('reg-name').value.trim() || 'there';
+        var success = document.getElementById('reg-success');
+        success.textContent = 'Thanks, ' + name + '! Your registration request has been received. We\u2019ll be in touch soon.';
+        success.style.display = 'block';
+        document.getElementById('reg-form').style.display = 'none';
+
+        var username = name.split(/\s+/)[0];
+        try {
+          localStorage.setItem('glovo_user', username);
+          localStorage.setItem('glovo_logged_in', '1');
+        } catch (err) { /* storage unavailable */ }
+      });
+    })();
+  </script>
+</body>
+</html>

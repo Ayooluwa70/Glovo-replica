@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#BE185D"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <g opacity="0.97">
+<g><rect x="122" y="90" width="56" height="12" rx="6" fill="#ffffff"/><path d="M126 102 h48 l-9 62 a15 15 0 0 1 -15 13 h-14 a15 15 0 0 1 -15 -13 z" fill="#ffffff"/><rect x="130" y="50" width="12" height="62" rx="6" fill="#FDE047" transform="rotate(10 136 81)"/><circle cx="160" cy="122" r="7" fill="#F9A8D4"/><circle cx="136" cy="128" r="4" fill="#F9A8D4"/><circle cx="138" cy="148" r="5" fill="#F9A8D4"/><circle cx="164" cy="154" r="6" fill="#F9A8D4"/></g>
+  </g>
+  <text x="150" y="240" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="27" fill="#ffffff">Bubble Tea</text>
+  <text x="150" y="268" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="20" fill="#ffffff">Shop</text>
+</svg>

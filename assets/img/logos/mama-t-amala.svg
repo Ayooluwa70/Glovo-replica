@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B71C1C"/>
+      <stop offset="1" stop-color="#E53935"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <g opacity="0.97">
+<g fill="#ffffff"><path d="M96 148 h108 l-11 44 a20 20 0 0 1 -19 15 h-48 a20 20 0 0 1 -19 -15 z"/><ellipse cx="150" cy="142" rx="56" ry="18"/><circle cx="128" cy="114" r="9"/><circle cx="150" cy="120" r="9"/><circle cx="172" cy="114" r="9"/><path d="M120 82 c6-8 6-14 0-20 M150 76 c6-8 6-14 0-20 M180 82 c6-8 6-14 0-20" stroke="#ffffff" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+  </g>
+  <text x="150" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="30" fill="#ffffff">Mama T</text>
+  <text x="150" y="261" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="21" fill="#ffffff">Amala Joint</text>
+</svg>

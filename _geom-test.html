@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>geom test</title>
+</head>
+<body>
+<iframe id="a" src="index.html" style="width:1440px;height:900px;border:0"></iframe>
+<iframe id="b" src="index.html" style="width:390px;height:844px;border:0"></iframe>
+<div id="out"></div>
+<script>
+(function () {
+  function out(t){ document.getElementById('out').innerHTML += '<br>' + t; }
+  function check(frameId, label) {
+    var fr = document.getElementById(frameId);
+    var w = fr.contentWindow, doc = fr.contentDocument;
+    if (!doc || !doc.querySelector('footer')) { out('RESULT ' + label + ' | not ready'); return false; }
+    var fw = w.innerWidth;
+    var f = doc.querySelector('footer');
+    var r = f.getBoundingClientRect();
+    var f = doc.querySelector('footer');
+    var fs = w.getComputedStyle(f);
+    var content = doc.querySelector('.my-footer-content');
+    var cs = w.getComputedStyle(content);
+    var firstText = content.getBoundingClientRect().top - f.getBoundingClientRect().top;
+    out('RESULT ' + label + ' | winW=' + fw + ' | footerRectL=' + Math.round(r.left) + ' R=' + Math.round(r.right) +
+        ' | footerPadTop=' + fs.paddingTop + ' | contentPadL=' + cs.paddingLeft + ' | contentMarginTop=' + cs.marginTop +
+        ' | gapFooterTopToContentTop=' + Math.round(firstText));
+    return true;
+  }
+  var pages = [['a','index-desktop'],['b','index-mobile']];
+  var idx = 0;
+  function go() {
+    if (idx >= pages.length) { out('RESULT done'); return; }
+    var p = pages[idx];
+    if (!check(p[0], p[1])) { setTimeout(go, 250); return; }
+    idx++; go();
+  }
+  go();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,551 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    --page-pad-t: 20px;
+    --page-pad-x: 20px;
+    height: 100dvh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 240, 239);
+    margin: 0;
+    padding: var(--page-pad-t) var(--page-pad-x);
+    color: #333333;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    background-color: #FFC042;
+    margin: calc(-1 * var(--page-pad-t)) calc(-1 * var(--page-pad-x)) 0;
+    padding: var(--page-pad-t) var(--page-pad-x) 140px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBtn{
+    display: flex;
+    align-items: center;
+    gap:50px ;
+}
+
+
+.nav-text{
+    font-weight: 500;
+}
+
+.foods{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.food{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-text{
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: -30px;
+    border-radius: 40px;
+    border: 2px solid rgb(230, 149, 0);
+    background-color: white;
+}
+.food-text:hover{
+    background-color:rgb(253, 226, 165) ;
+}
+.woblly-box{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 22px;
+    display: block;
+    object-fit: cover;
+}
+
+.search{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgb(246, 246, 246);
+}
+
+.input input{
+    width: 500px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search-btn{
+    color: white;
+    padding: 12px 20px 12px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: rgb(0, 135, 81);
+    font-weight: 700;
+    border: none;
+}
+
+/* Single container div holding all content */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Top Handshake Icon styling */
+.icon-box {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Main Heading styling */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 50px;
+}
+
+/* Layout for the three columns */
+.columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual column styling */
+.card {
+    flex: 1;
+    min-width: 240px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Rounded blob image shape using simple border-radius */
+.blob-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    margin-bottom: 20px;
+    border: 2px solid #e2e8f0;
+}
+
+/* Card titles */
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #111111;
+}
+
+/* Card descriptive text */
+p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    min-height: 60px;
+}
+
+/* Simple button styling */
+.btn {
+    background-color: #00A082;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #008269;
+}
+
+/* Single main container div holding all footer content */
+footer{
+    display: flex;
+    justify-content: center;
+    background: #171717;
+    color: white;
+    margin: 80px calc(-1 * var(--page-pad-x)) calc(-1 * var(--page-pad-t));
+    padding: 50px 0;
+}
+
+.my-footer-content {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+/* Simple block sections simulating beginner layout */
+.footer-section {
+    margin-bottom: 30px;
+}
+
+/* Headings */
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* List and links styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Simple float or inline block layout for columns */
+.col {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 15px;
+    color: white;
+}
+
+.right-col {
+    width: 25%;
+    float: right;
+    box-sizing: border-box;
+}
+
+/* Clearfix for floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* App badge buttons styling */
+.app-badge {
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 140px;
+    color: white;
+}
+
+/* Bottom categories block */
+.bottom-categories {
+    margin-top: 40px;
+    clear: both;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: white;
+}
+
+.category-links a {
+    margin-right: 15px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablets & small laptops */
+@media (max-width: 900px) {
+    header {
+        gap: 40px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        row-gap: 14px;
+    }
+
+    .navBtn {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foods {
+        flex-wrap: wrap;
+    }
+
+    footer .col,
+    footer .right-col {
+        width: 50%;
+        padding-bottom: 26px;
+    }
+
+    footer .bottom-categories {
+        margin-top: 20px;
+    }
+}
+
+/* Tablets portrait & large phones */
+@media (max-width: 700px) {
+    body {
+        --page-pad-t: 14px;
+        --page-pad-x: 14px;
+        padding: 14px;
+        overflow-x: hidden;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header {
+        gap: 26px;
+    }
+
+    .nav-btn {
+        min-height: 44px;
+        padding: 8px 12px;
+        gap: 6px;
+        font-size: 13px;
+    }
+
+    .nav-text {
+        max-width: 130px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .foods {
+        gap: 12px;
+    }
+
+    .foods > .food,
+    .foods > div {
+        width: calc(50% - 6px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .foods > div > .food {
+        width: 100%;
+    }
+
+    .woblly-box {
+        width: 100%;
+    }
+
+    .woblly-box svg {
+        width: 100%;
+        max-width: 130px;
+        height: auto;
+        display: block;
+    }
+
+    .cat-img {
+        width: 100%;
+        max-width: 130px;
+        height: auto;
+    }
+
+    .food-text {
+        font-size: 13px;
+        padding: 8px 12px;
+        margin: -26px auto 0;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .input {
+        width: 100%;
+        max-width: none;
+        justify-content: center;
+    }
+
+    .input input {
+        width: auto;
+        flex: 1;
+        min-width: 0;
+        font-size: 16px;
+    }
+
+    .search-btn {
+        align-self: stretch;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .card p {
+        min-height: 0;
+    }
+
+    .blob-img {
+        max-width: 100%;
+    }
+
+    .columns-wrapper {
+        justify-content: center;
+    }
+
+    .btn {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my-footer-content {
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+
+    .col,
+    .right-col {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        margin-bottom: 26px;
+    }
+
+    .bottom-categories {
+        margin-top: 20px;
+    }
+}
+
+/* Phones */
+@media (max-width: 400px) {
+    .cat-img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .nav-btn {
+        height: auto;
+        min-height: 40px;
+        padding: 7px 12px;
+    }
+
+    .food-text {
+        white-space: normal;
+        text-align: center;
+        max-width: calc(100vw - 28px);
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .card {
+        min-width: 0;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+/* Landscape phones & small tablets (wide but short screens) */
+@media (max-width: 900px) and (max-height: 600px) and (orientation: landscape) {
+    body {
+        --page-pad-t: 10px;
+        --page-pad-x: 16px;
+        padding: 10px 16px;
+    }
+
+    header {
+        gap: 24px;
+    }
+
+    .container {
+        margin-top: 24px;
+        padding: 12px;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+    .blob-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .my-footer-content {
+        margin-top: 80px;
+    }
+}

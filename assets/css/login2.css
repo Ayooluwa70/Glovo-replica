@@ -1,0 +1,305 @@
+/* Simple login page styling */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717;
+    background-color: white;
+}
+
+header {
+    padding: 24px 7%;
+}
+
+.brand img {
+    width: 125px;
+}
+
+.login-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 35px 20px 50px;
+}
+
+.login-card {
+    width: 460px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 12%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #222;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0 0 15px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.intro {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.phone-fields {
+    display: flex;
+    gap: 12px;
+}
+
+.prefix-label {
+    width: 170px;
+}
+
+.number-label {
+    flex: 1;
+}
+
+.email-label {
+    display: block;
+    margin-top: 18px;
+}
+
+.email-error {
+    display: none;
+    margin: 10px 0 0;
+    color: #d93025;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.email-error.show {
+    display: block;
+}
+
+.whatsapp {
+    margin-top: 22px;
+}
+
+input.error {
+    border-color: #d93025;
+    background-color: #fff5f5;
+}
+
+label {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+select, input {
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    padding: 0 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+}
+.recaptcha {
+    margin: 32px 0;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.recaptcha a, .terms a {
+    color: #006d59;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.whatsapp {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #008c74;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.or {
+    margin: 25px 0 20px;
+    color: #555;
+    text-align: center;
+    font-size: 19px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 30px;
+    background-color: white;
+    color: #151515;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google { color: #4285f4; font-size: 24px; margin-right: 10px; }
+.facebook { color: #1877f2; font-size: 25px; margin-right: 10px; }
+.mail { font-size: 22px; margin-right: 10px; }
+
+.terms {
+    margin-top: 42px;
+    color: #5b5b5b;
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablets portrait & large phones */
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .brand img {
+        width: 110px;
+    }
+
+    .login-page {
+        padding: 30px 18px 40px;
+    }
+
+    .login-card {
+        width: 100%;
+    }
+
+    .close {
+        right: 18px;
+        top: -6px;
+    }
+
+    .phone-fields {
+        display: block;
+    }
+
+    .prefix-label {
+        display: block;
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .intro {
+        font-size: 17px;
+    }
+
+    .whatsapp {
+        font-size: 17px;
+        min-height: 52px;
+    }
+
+    .btn {
+        font-size: 18px;
+        height: 54px;
+    }
+
+    select,
+    input {
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .terms {
+        margin-top: 32px;
+        font-size: 15px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+    header {
+        padding: 16px;
+    }
+
+    .login-page {
+        padding: 24px 14px 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    select,
+    input,
+    #reg-type {
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .whatsapp {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .close {
+        top: 0;
+    }
+}
+
+/* Landscape phones & small tablets (wide but short screens) */
+@media (max-width: 900px) and (max-height: 600px) and (orientation: landscape) {
+    header {
+        padding: 16px 20px;
+    }
+
+    .login-page {
+        padding: 20px 20px 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .intro {
+        margin-bottom: 16px;
+        font-size: 17px;
+    }
+
+    .login-card {
+        width: min(460px, 78%);
+    }
+
+    .whatsapp,
+    .btn {
+        height: 50px;
+    }
+
+    select,
+    input {
+        height: 50px;
+    }
+}

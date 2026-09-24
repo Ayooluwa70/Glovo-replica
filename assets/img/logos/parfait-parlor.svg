@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6B21A8"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <g opacity="0.97">
+<g><rect x="118" y="88" width="64" height="16" rx="8" fill="#ffffff"/><path d="M126 104 h48 l-8 58 a16 16 0 0 1 -16 13 h-16 a16 16 0 0 1 -16 -13 z" fill="#ffffff"/><ellipse cx="150" cy="126" rx="24" ry="6" fill="url(#bg)"/><ellipse cx="150" cy="144" rx="22" ry="6" fill="url(#bg)"/><ellipse cx="150" cy="162" rx="20" ry="6" fill="url(#bg)"/><circle cx="150" cy="80" r="9" fill="#F43F5E"/><path d="M146 76 l-8 10 M154 76 l8 10" stroke="#4D7C0F" stroke-width="4" stroke-linecap="round"/></g>
+  </g>
+  <text x="150" y="240" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="26" fill="#ffffff">Parfait Parlor</text>
+  <text x="150" y="268" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="20" fill="#ffffff">Limited</text>
+</svg>

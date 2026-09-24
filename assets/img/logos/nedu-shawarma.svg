@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B45309"/>
+      <stop offset="1" stop-color="#EA8722"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <g opacity="0.97">
+<g><path d="M124 92 h52 l22 74 a14 14 0 0 1 -14 18 h-68 a14 14 0 0 1 -14 -18 z" fill="#FDE68A"/><rect x="128" y="120" width="44" height="30" rx="9" fill="#ffffff"/><path d="M120 84 c8-14 18-20 28-16 -8 6 -11 14 -8 26 -5-8 -12-12 -20-10 z" fill="#A3E635"/><circle cx="198" cy="98" r="12" fill="#F87171"/></g>
+  </g>
+  <text x="150" y="238" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="30" fill="#ffffff">Nedu</text>
+  <text x="150" y="266" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="22" fill="#ffffff">Shawarma</text>
+</svg>

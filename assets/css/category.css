@@ -1,0 +1,153 @@
+/* Interactive category tiles (home pages): item-list panel styled after the
+   search results page. */
+
+.category-panel {
+    width: 88%;
+    max-width: 1180px;
+    margin: 18px auto 0;
+    padding: 18px 18px 20px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+}
+
+.cat-panel-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.cat-title {
+    margin: 0;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+
+.cat-count {
+    margin-right: auto;
+    color: #777;
+    font-size: 12px;
+}
+
+.cat-close {
+    margin: 0;
+    border: 0;
+    background: #f1f1f2;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.cat-close:hover {
+    background: #e2e2e2;
+    color: #1d1d1d;
+}
+
+.cat-panel-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.cat-item {
+    width: calc((100% - 24px) / 3);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    background: #ffffff;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease;
+    box-sizing: border-box;
+}
+
+.cat-item:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.cat-thumb {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: #ffd477;
+}
+
+.cat-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cat-item-body {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-item-body h4 {
+    margin: 0 0 2px;
+    font-size: 13px;
+    color: #1d1d1d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-item-body p {
+    margin: 0 0 6px;
+    font-size: 11px;
+    color: #777;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-price {
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: bold;
+    color: #008b73;
+}
+
+.food-text.active {
+    background-color: rgb(253, 226, 165);
+    border-color: #008b73;
+}
+
+@media (max-width: 760px) {
+    .cat-item {
+        width: calc((100% - 12px) / 2);
+    }
+}
+
+@media (max-width: 480px) {
+    .cat-item {
+        width: 100%;
+    }
+
+    .category-panel {
+        width: 92%;
+        padding: 14px;
+    }
+}

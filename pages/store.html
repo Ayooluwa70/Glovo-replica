@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0">
+    <link rel="stylesheet" href="../assets/css/style2.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/store.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <title>Glovo Store</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html">
+                <img class="logo" src="../assets/img/Logo.svg" alt="GrubGo">
+            </a>
+
+            <div class="address" data-profile-location-widget>
+                <span class="material-symbols-outlined">location_on</span>
+                <b data-profile-location>Ahmadu Bello Way, E</b>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+
+            <div class="search-box">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" placeholder="Search Glovo">
+            </div>
+            <a href="search.html"><button>Search</button></a>
+            <div class="profile" data-profile-user-widget>
+                <span class="material-symbols-outlined">account_circle</span>
+                <b data-profile-user>Ayooluwa</b>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <p class="crumb"><a href="search.html"><span class="material-symbols-outlined">arrow_back</span>Back to stores</a></p>
+
+        <section class="store-hero" id="store-hero"></section>
+
+        <div class="tabs-wrap">
+            <nav class="menu-tabs" id="menu-tabs"></nav>
+        </div>
+
+        <div id="menu"></div>
+    </main>
+
+    <button class="cart-bar" id="cart-bar">
+        <span class="cart-icon">
+            <svg width="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 8h14l-1.63 7.56a2 2 0 0 1-1.96 1.94H9.42a2 2 0 0 1-1.96-1.56L5.17 5.5A1.5 1.5 0 0 0 3.7 4.5H2" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.4" fill="white"/><circle cx="17" cy="20" r="1.4" fill="white"/></svg>
+        </span>
+        <span class="cart-meta">
+            <span class="cart-label">You have <b id="cart-count">0</b> items</span>
+            <span class="cart-total" id="cart-total">&#8358;0</span>
+        </span>
+    </button>
+
+    <div class="scrim" id="scrim"></div>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Your cart">
+        <div class="drawer-head">
+            <h2>Your cart</h2>
+            <span class="store-name" id="store-title"></span>
+            <button class="close-cart" id="close-cart" aria-label="Close cart">&times;</button>
+        </div>
+
+        <div class="drawer-body">
+            <div id="cart-items"></div>
+
+            <div id="cart-summary">
+                <div class="cost-row"><span>Subtotal</span><span id="subtotal">&#8358;0</span></div>
+                <div class="cost-row"><span>Delivery fee</span><span id="delivery-fee">&#8212;</span></div>
+                <div class="cost-row total"><span>Total</span><span id="grand-total">&#8358;0</span></div>
+                <button class="checkout" id="checkout">Go to checkout</button>
+            </div>
+
+            <div class="cart-empty" id="cart-empty" style="display:none;">
+                <p class="empty-title">Order placed!</p>
+                <p>Your cart is now empty. Ready to order again?</p>
+                <button class="checkout" id="back-to-menu">Back to menu</button>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+            <!-- Single container div holding all footer content -->
+    <div class="my-footer-content clearfix">
+
+        <!-- Column 1: Let's do it together -->
+        <div class="col">
+            <h4>Let's do it together</h4>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Register your business</a></li>
+                <li><a href="#">Couriers</a></li>
+                <li><a href="#">Glovo Business</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 2: Links of interest -->
+        <div class="col">
+            <h4>Links of interest</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Glovo Prime</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Follow us -->
+        <div class="col">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Side: Apps and Legal Links -->
+        <div class="right-col">
+            <div style="margin-bottom: 20px;">
+                <a href="https://apps.apple.com/us/app/glovo-food-delivery-takeaway/id951812684" class="app-badge">Download on the App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.glovo&pli=1" class="app-badge">GET IT ON Google Play</a>
+            </div>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Compliance</a></li>
+                <li><a href="#">Configure the cookies</a></li>
+                <li><a href="#">Digital Services Act</a></li>
+                <li><a href="#">European Accessibility Act</a></li>
+            </ul>
+        </div>
+
+        <!-- Bottom Section: Top categories: Nigeria -->
+        <div class="bottom-categories">
+            <h4>Top categories: Nigeria</h4>
+            <div class="category-links">
+                <a href="#">Breakfast</a>
+                <a href="#">Burgers</a>
+                <a href="#">Healthy</a>
+                <a href="#">Indian</a>
+                <a href="#">Nigerian</a>
+                <a href="#">Pastries</a>
+                <a href="#">Pizza</a>
+                <a href="#">Sushi</a>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="#">All categories</a>
+            </div>
+        </div>
+
+    </div>
+    </footer>
+
+    <script src="../assets/js/product-shots.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/profile.js"></script>
+</body>
+</html>
