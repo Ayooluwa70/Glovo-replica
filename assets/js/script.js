@@ -182,6 +182,26 @@
     function init() {
         initIndexSearch();
         initSearchPage();
+        initScrollToTop();
+    }
+
+    function initScrollToTop() {
+        var btn = document.getElementById('scroll-to-top');
+        if (!btn) return;
+
+        var scrollThreshold = 300;
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > scrollThreshold) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     }
 
     if (document.readyState === 'loading') {
