@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a Glovo account.">
+  <link rel="stylesheet" href="../assets/css/login2.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <title>Sign up for Glovo</title>
+</head>
+<body>
+  <header><a href="index2.html" class="brand"><img src="../assets/img/Logo.svg" alt="GrubGo"></a></header>
+  <main class="login-page">
+    <a href="../index.html" class="close" aria-label="Close signup">&times;</a>
+    <section class="login-card" aria-labelledby="welcome-title">
+      <h1 id="welcome-title">Create account</h1>
+      <p class="intro">Enter your details to get started</p>
+      <form id="signup-form">
+        <p class="recaptcha">This site is protected by reCAPTCHA and the Google<br><a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms of Service</a> apply.</p>
+        <label class="email-label" for="signup-name">Full name
+          <input id="signup-name" type="text" placeholder="Your full name" required autocomplete="name">
+        </label>
+        <p class="email-error" id="name-error" role="alert"></p>
+        <label class="email-label" for="signup-email">Email
+          <input id="signup-email" type="email" placeholder="name@gmail.com" required autocomplete="email">
+        </label>
+        <p class="email-error" id="email-error" role="alert"></p>
+        <label class="email-label" for="signup-phone">Phone number
+          <input id="signup-phone" type="tel" placeholder="+234 800 000 0000" required autocomplete="tel">
+        </label>
+        <p class="email-error" id="phone-error" role="alert"></p>
+        <label class="email-label" for="signup-password">Password
+          <input id="signup-password" type="password" placeholder="Create a password (min 8 chars)" required autocomplete="new-password" minlength="8">
+        </label>
+        <p class="email-error" id="password-error" role="alert"></p>
+        <button class="whatsapp" id="signup-submit" type="submit">Create account</button>
+      </form>
+      <p class="or">Or with</p>
+      <div class="social-buttons">
+        <a href="index2.html"><button class="btn" type="button"><img src="../assets/img/Google.png" width="50px" alt=""> google</button></a>
+        <a href="index2.html"><button type="button" class="btn"><img src="../assets/img/[CITYPNG.COM]Hd Blue And White Square Facebook Fb Logo - 1000x1000.png" alt="" width="30px">Facebook</button></a>
+        <a href="index2.html"><button class="btn" type="button"><svg viewBox="0 0 24 24" width="30px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="color:#1d1d1d;"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Apple</button></a>
+      </div>
+      <p class="terms">By creating an account, you automatically accept<br>our <a href="#terms">Terms of service</a>, <a href="#privacy">Privacy Policy</a> and <a href="#cookies">Cookies Policy</a></p>
+      <p class="terms" style="margin-top: 16px;">Already have an account? <a href="login2.html">Log in</a></p>
+    </section>
+  </main>
+  <footer>
+          <!-- Single container div holding all footer content -->
+  <div class="my-footer-content clearfix">
+
+      <!-- Column 1: Let's do it together -->
+      <div class="col">
+          <h4>Let's do it together</h4>
+          <ul>
+              <li>Careers</li>
+              <li>Register your business</li>
+              <li>Couriers</li>
+              <li>Glovo Business</li>
+          </ul>
+      </div>
+
+      <!-- Column 2: Links of interest -->
+      <div class="col">
+          <h4>Links of interest</h4>
+          <ul>
+              <li>About us</li>
+              <li>FAQ</li>
+              <li>Glovo Prime</li>
+              <li>Blog</li>
+              <li>Contact us</li>
+              <li>Security</li>
+              <li>Profile</li>
+          </ul>
+      </div>
+
+      <!-- Column 3: Follow us -->
+      <div class="col">
+          <h4>Follow us</h4>
+          <ul>
+              <li>Instagram</li>
+              <li>TikTok</li>
+          </ul>
+      </div>
+
+      <!-- Right Side: Apps and Legal Links -->
+      <div class="right-col">
+          <div style="margin-bottom: 20px;">
+              <a href="https://apps.apple.com/us/app/glovo-food-delivery-takeaway/id951812684" class="app-badge">Download on the App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.glovo&pli=1" class="app-badge">GET IT ON Google Play</a>
+          </div>
+          <ul>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Cookies Policy</li>
+              <li>Compliance</li>
+              <li>Configure the cookies</li>
+              <li>Digital Services Act</li>
+              <li>European Accessibility Act</li>
+          </ul>
+      </div>
+
+  </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('signup-form');
+      var nameInput = document.getElementById('signup-name');
+      var nameError = document.getElementById('name-error');
+      var emailInput = document.getElementById('signup-email');
+      var emailError = document.getElementById('email-error');
+      var phoneInput = document.getElementById('signup-phone');
+      var phoneError = document.getElementById('phone-error');
+      var passwordInput = document.getElementById('signup-password');
+      var passwordError = document.getElementById('password-error');
+
+      function showError(input, errEl, message) {
+        errEl.textContent = message;
+        errEl.classList.add('show');
+        input.classList.add('error');
+        input.focus();
+      }
+
+      function clearError(input, errEl) {
+        errEl.textContent = '';
+        errEl.classList.remove('show');
+        input.classList.remove('error');
+      }
+
+      function clearAllErrors() {
+        clearError(nameInput, nameError);
+        clearError(emailInput, emailError);
+        clearError(phoneInput, phoneError);
+        clearError(passwordInput, passwordError);
+      }
+
+      nameInput.addEventListener('input', function () { clearError(nameInput, nameError); });
+      emailInput.addEventListener('input', function () { clearError(emailInput, emailError); });
+      phoneInput.addEventListener('input', function () { clearError(phoneInput, phoneError); });
+      passwordInput.addEventListener('input', function () { clearError(passwordInput, passwordError); });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        clearAllErrors();
+
+        var name = nameInput.value.trim();
+        if (!name) {
+          showError(nameInput, nameError, 'Please enter your full name.');
+          return;
+        }
+        if (name.length < 2) {
+          showError(nameInput, nameError, 'Your name must be at least 2 characters.');
+          return;
+        }
+
+        var email = emailInput.value.trim();
+        if (!email) {
+          showError(emailInput, emailError, 'Please enter your email address.');
+          return;
+        }
+
+        var gmailMatch = email.match(/^([^@\s]+)@gmail\.([^.]+)$/i);
+        if (gmailMatch) {
+          var corrected = gmailMatch[1] + '@gmail.com';
+          emailInput.value = corrected;
+          email = corrected;
+        }
+
+        if (!/^[^@\s]+@gmail\.com$/i.test(email)) {
+          showError(emailInput, emailError, 'Your email must be a "@gmail.com" address, e.g. name@gmail.com');
+          return;
+        }
+
+        var phone = phoneInput.value.trim();
+        if (!phone) {
+          showError(phoneInput, phoneError, 'Please enter your phone number.');
+          return;
+        }
+        if (phone.length < 10) {
+          showError(phoneInput, phoneError, 'Please enter a valid phone number.');
+          return;
+        }
+
+        var password = passwordInput.value;
+        if (!password) {
+          showError(passwordInput, passwordError, 'Please create a password.');
+          return;
+        }
+        if (password.length < 8) {
+          showError(passwordInput, passwordError, 'Password must be at least 8 characters.');
+          return;
+        }
+
+        try {
+          localStorage.setItem('glovo_user', name.split(/\s+/)[0]);
+          localStorage.setItem('glovo_logged_in', '1');
+        } catch (err) { /* storage unavailable */ }
+
+        window.location.href = 'index2.html';
+      });
+    })();
+  </script>
+</body>
+</html>
