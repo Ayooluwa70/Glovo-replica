@@ -17,6 +17,9 @@
             <div class="nav-btn">
                 <a href="pages/login2.html"><button class="search-btn">Log in</button></a>
             </div>
+            <div class="nav-btn">
+                <button class="search-btn" id="signup-btn">Sign up</button>
+            </div>
             </div>
         
         <div class="foods">
@@ -405,6 +408,34 @@
 
     </div>
     </footer>
+    <div id="signup-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="signup-title" hidden>
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2 id="signup-title">Create an account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full name</label>
+                    <input type="text" id="signup-name" placeholder="Your full name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="you@example.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="signup-phone">Phone number</label>
+                    <input type="tel" id="signup-phone" placeholder="+234 800 000 0000" required autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required autocomplete="new-password" minlength="8">
+                </div>
+                <p class="form-note">By creating an account, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                <button type="submit" class="btn btn-primary">Create account</button>
+            </form>
+            <p class="modal-footer">Already have an account? <a href="pages/login2.html">Log in</a></p>
+        </div>
+    </div>
     <script src="assets/js/profile.js"></script>
     <script src="assets/js/store.js"></script>
     <script src="assets/js/search-api.js"></script>
